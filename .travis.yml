@@ -9,4 +9,4 @@
    password: codered1
    api: https://api.run.pivotal.io
    organization: CodeRed
-   space: staging
+   space: development
