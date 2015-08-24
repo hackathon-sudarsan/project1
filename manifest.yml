@@ -1,6 +1,6 @@
 ---
 applications: 
- - name: hackathon
+ - name: CodeRed
    memory: 512M 
-   host: codRed
-   path: target/code.war
+   host: CodeRed-host
+   path: target/codered.war
