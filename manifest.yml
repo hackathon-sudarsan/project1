@@ -1,0 +1,6 @@
+---
+applications: 
+ - name: hackathon
+   memory: 512M 
+   host: codRed
+   path: target/code.war
