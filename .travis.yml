@@ -1,6 +1,6 @@
  language: java
  install: mvn install -DskipTest=true
- sudo: true
+ sudo: false
  
  deploy:
    edge: true
@@ -10,5 +10,3 @@
    api: https://api.run.pivotal.io
    organization: CodeRed
    space: development
-
-//test
