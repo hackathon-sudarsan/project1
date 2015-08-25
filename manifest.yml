@@ -4,3 +4,5 @@ applications:
    memory: 512M 
    host: CodeRed-host
    path: target/codered.war
+
+//test
