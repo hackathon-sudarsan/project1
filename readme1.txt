@@ -8,6 +8,7 @@ proxy.ebiz.verizon.com
 113.128.161.205 Nadeem
 113.128.161.200 jaya
 
+
 https://vdsicitrix.verizon.com
 =================================
 https://github.com
@@ -39,8 +40,21 @@ pass    codered1
 
 
 
-Instance name	codred-DB-instance
+Instance name	codred-DB-instance - deleted
 
+Instance name	codered-mysql
+
+hostname	us-cdbr-iron-east-02.cleardb.net
+jdbcUrl		jdbc:mysql://us-cdbr-iron-east-02.cleardb.net/ad_43f635f72750b54?user=bfe8e3698cba7f&password=ba6201f1
+name		ad_43f635f72750b54
+password	ba6201f1
+port		3306
+uri		mysql://bfe8e3698cba7f:ba6201f1@us-cdbr-iron-east-02.cleardb.net:3306/ad_43f635f72750b54?reconnect=true
+username	bfe8e3698cba7f
+
+
+
+Instance name	codered-flash
 
 ===============================
 mvn settings.xml proxy
@@ -66,8 +80,6 @@ I usually only need to set:
 set http_proxy=http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
 set https_proxy=http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
 ===============================
-
-===============================
 etc/hosts
 
 192.30.252.128		github.com
@@ -81,5 +93,35 @@ c:/usr/admin/.git.config
 proxy = http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
 [https] 	
 proxy = http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
+
+===============================
+travis.yml
+
+ language: java
+ install: mvn install -DskipTest=true
+ sudo: required
+ sudo: true
+ 
+ deploy:
+   edge: true
+   provider: 
+
+cloudfoundry
+   username: sudarsan.x.james@verizon.com
+   password: codered1
+   api: https://api.run.pivotal.io
+   
+
+organization: CodeRed
+   space: development
+
+manifest.yml
+
+---
+applications: 
+ - name: CodeRed
+   memory: 512M 
+   host: CodeRed-host
+   path: target/codered.war
 
 ===============================
