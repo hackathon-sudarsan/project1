@@ -101,20 +101,17 @@ travis.yml
  install: mvn install -DskipTest=true
  sudo: required
  sudo: true
- 
- deploy:
-   edge: true
-   provider: 
+  
+deploy:
+ edge: true
+ provider: cloudfoundry
+ username: sudarsan.x.james@verizon.com
+ password: codered1
+ api: https://api.run.pivotal.io
+ organization: CodeRed
+ space: development
 
-cloudfoundry
-   username: sudarsan.x.james@verizon.com
-   password: codered1
-   api: https://api.run.pivotal.io
-   
-
-organization: CodeRed
-   space: development
-
+==
 manifest.yml
 
 ---
