@@ -67,12 +67,19 @@ set http_proxy=http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
 set https_proxy=http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
 ===============================
 
+===============================
+etc/hosts
+
+192.30.252.128		github.com
+
+==
 git proxy
 
 c:/usr/admin/.git.config
 
-
-[http] http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
-[https] http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
+[http] 		
+proxy = http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
+[https] 	
+proxy = http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
 
 ===============================
