@@ -12,6 +12,7 @@ https://vdsicitrix.verizon.com
 =================================
 https://github.com
 
+https://github.com/hackathon-sudarsan/project1.git
 user	hackathon-sudarsan
 
 email   sudarsan.x.james@verizon.com
@@ -64,12 +65,14 @@ Windows
 I usually only need to set:
 set http_proxy=http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
 set https_proxy=http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
-=============================== 
+===============================
 
 git proxy
 
 c:/usr/admin/.git.config
 
 
-[http} http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
-[https} http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
+[http] http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
+[https] http://VDSI/v709683:MScross1@proxy.ebiz.verizon.com:80
+
+===============================
