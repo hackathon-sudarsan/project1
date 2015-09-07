@@ -1,0 +1,9 @@
+https://blogs.oracle.com/ATeamExalogic/entry/analyzing_thread_dumps_in_middleware
+http://allthingsmdw.blogspot.in/2012/02/analyzing-thread-dumps-in-middleware_9856.html
+
+https://java.net/people/173531-Ingo-Rockel
+http://yusuke.homeip.net/samurai/en/index.html
+
+http://jojovedder.blogspot.in/2009/01/app-server-high-cpu-or-low-threads.html
+http://www.javacodegeeks.com/2012/03/jvm-how-to-analyze-thread-dump.html
+http://docs.oracle.com/cd/E13150_01/jrockit_jvm/jrockit/geninfo/diagnos/thread_basics.html
