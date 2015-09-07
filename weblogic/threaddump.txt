@@ -7,3 +7,24 @@ http://yusuke.homeip.net/samurai/en/index.html
 http://jojovedder.blogspot.in/2009/01/app-server-high-cpu-or-low-threads.html
 http://www.javacodegeeks.com/2012/03/jvm-how-to-analyze-thread-dump.html
 http://docs.oracle.com/cd/E13150_01/jrockit_jvm/jrockit/geninfo/diagnos/thread_basics.html
+
+java heap
+http://javarevisited.blogspot.in/2011/05/java-heap-space-memory-size-jvm.html
+http://javarevisited.blogspot.in/2011/04/garbage-collection-in-java.html
+http://javarevisited.blogspot.sg/2011/11/hotspot-jvm-options-java-examples.html
+
+you can change size of heap space by using JVM options -Xms and -Xmx. 
+-Xms denotes starting size of Heap while 
+-Xmx denotes maximum size of Heap in Java
+-Xmn which denotes Size of new generation of Java Heap Space
+
+jmap
+jhat - Java Heap Analysis Tool
+
+http://gskblogs.blogspot.in/2012/09/thread-analysis-in-weblogic-on-linux.html
+https://community.oracle.com/thread/2459244?start=0&tstart=0
+
+---------
+
+http://yusuke.homeip.net/samurai/en/samurai.jar
+https://java.net/projects/tda/downloads/download/tda-bin-2.2.zip
